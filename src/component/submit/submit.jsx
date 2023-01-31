@@ -3,17 +3,18 @@ import * as S from './submit.style';
 const Submit = () => {
   return (
     <S.Submit>
-      <label placeholder='email'>
-        <input
-          type='email'
-          placeholder='Email Address'
-          style={{ height: '60px', minWidth: '450px' }}
-        />
-        <label id='email' style={{ display: 'none' }}>
-          Email Address
-        </label>
+      <input
+        type='email'
+        id='email'
+        placeholder='Email Address'
+        style={{ height: '60px', minWidth: '450px' }}
+      />
+      <label htmlFor='email' style={{ display: 'none' }}>
+        Email Address
       </label>
-      <Button height='60px'>Get Started</Button>
+      <Button height='60px' padding='m' fontSize='m'>
+        Get Started
+      </Button>
     </S.Submit>
   );
 };

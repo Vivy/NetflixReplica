@@ -5,6 +5,7 @@ export const Header = styled.div`
   align-items: flex-start;
   height: auto;
   padding:20px;
+  width: 100%;
   justify-content: space-between;
   /* font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif; */
 `
@@ -19,6 +20,7 @@ export const Img = styled.img`
 
 export const Wrapper = styled.div`
   display: flex;
+  gap:20px;
   
 `
 

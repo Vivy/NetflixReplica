@@ -11,7 +11,9 @@ const Header = () => {
 
       <S.Wrapper>
         <Select />
-        <Button href='/signin'>Sign In</Button>
+        <Button href='/signin' padding='s'>
+          Sign In
+        </Button>
       </S.Wrapper>
     </S.Header>
   );

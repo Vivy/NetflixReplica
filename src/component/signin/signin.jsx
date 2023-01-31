@@ -4,16 +4,16 @@ const SignIn = () => {
   return (
     <S.SignIn>
       <div>
-        <input type='email' placeholder='email' />
-        Email<label id='email'></label>
+        <input type='email' id='email' placeholder='email' />
+        Email<label htmlFor='email'></label>
       </div>
       <div>
-        <input type='password' placeholder='password' />
-        Password<label id='password'></label>
+        <input type='password' id='password' placeholder='password' />
+        Password<label htmlFor='password'></label>
       </div>
       <div>
-        <input type='checkbox' />
-        <label id='checkbox'>Remember me</label>
+        <input type='checkbox' id='checkbox' />
+        <label htmlFor='checkbox'>Remember me</label>
       </div>
     </S.SignIn>
   );

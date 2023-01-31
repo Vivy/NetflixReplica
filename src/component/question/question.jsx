@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import Flex from '../flex/flex';
-import Title from '../title/title';
 import * as S from './question.style';
 
 const Question = ({ children, text }) => {

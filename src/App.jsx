@@ -5,19 +5,26 @@ import Header from './component/header/header';
 import HeroList from './component/herolist/herolist';
 import QuestionList from './component/questionlist/questionlist';
 import './index.css';
+import * as S from './App.style';
+import SignIn from './component/signin/signin';
 
 function App() {
   return (
     <div className='App'>
+      {/* <Menu></Menu> */}
+      {/* <Router> */}
       <BckImage>
-        <div className='gradient'>
+        <S.DivGradient>
           <Header />
           <Card />
-        </div>
+        </S.DivGradient>
       </BckImage>
       <HeroList />
       <QuestionList />
       <Footer />
+      {/* <Home /> */}
+      {/* <SignIn /> */}
+      {/* </Router> */}
     </div>
   );
 }
