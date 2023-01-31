@@ -10,8 +10,10 @@ function App() {
   return (
     <div className='App'>
       <BckImage>
-        <Header />
-        <Card />
+        <div className='gradient'>
+          <Header />
+          <Card />
+        </div>
       </BckImage>
       <HeroList />
       <QuestionList />

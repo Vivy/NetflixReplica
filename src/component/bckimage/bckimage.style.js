@@ -8,3 +8,7 @@ export const BckImage = styled.div`
   /* background: rgba(0,0,0,.4);
   background-image: linear-gradient(0deg,rgba(0,0,0,.8) 0,transparent 60%,rgba(0,0,0,.8));  */
 `
+export const divGradient = styled.div`
+  background: rgba(0,0,0,.4);
+  background-image: linear-gradient(0deg,rgba(0,0,0,.8) 0,transparent 60%,rgba(0,0,0,.8));
+`

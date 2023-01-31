@@ -11,7 +11,7 @@ const Header = () => {
 
       <S.Wrapper>
         <Select />
-        <Button>Sign in</Button>
+        <Button href='/signin'>Sign In</Button>
       </S.Wrapper>
     </S.Header>
   );

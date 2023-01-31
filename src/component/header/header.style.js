@@ -6,6 +6,7 @@ export const Header = styled.div`
   height: auto;
   padding:20px;
   justify-content: space-between;
+  /* font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif; */
 `
 
 export const Img = styled.img`
@@ -18,9 +19,10 @@ export const Img = styled.img`
 
 export const Wrapper = styled.div`
   display: flex;
-  gap:20px;
+  
 `
 
 export const ImgWrapper = styled.div`
+
   width:134px
 `

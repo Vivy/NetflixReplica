@@ -30,7 +30,7 @@ const Footer = () => {
       <S.AnchorStyle href='Terms of use'>Terms of use</S.AnchorStyle>
       <S.AnchorStyle href='Contact us'>Contact us</S.AnchorStyle>
       <S.AnchorStyle href='Only on Netflix'>Only on Netflix</S.AnchorStyle>
-      <Select />
+      <Select style={{ justifySelf: 'left' }} />
       <p style={{ gridRow: '7/8' }}>Netflix Romania</p>
     </S.Footer>
   );

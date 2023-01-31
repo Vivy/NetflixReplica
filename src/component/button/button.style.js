@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Button = styled.button`
+export const Button = styled.a`
   display: flex;
   align-items: center;
   background-color: #e50914;
@@ -9,11 +9,11 @@ export const Button = styled.button`
   font-weight: 400;
   line-height: normal;
   padding: 7px 17px;
-  gap:10px;
-  height: 30px;
+  margin: 0 3.5rem;
   color: white;
   border-radius: 5px;
   border: none;
+  text-decoration: none;
   cursor: pointer;
   ${({ width }) => (width ? `width:${width}` : '')}
   ${({ height }) => (height ? `height:${height}` : '')}

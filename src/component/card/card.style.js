@@ -6,7 +6,7 @@ export const Card = styled.div`
   gap: 20px;
   margin: 0 auto;
   max-width: 950px;
-  padding: 75px 0;
+  padding: 195px 0;
   position: relative;
   text-align: center;
   width: 100%;

@@ -11,4 +11,6 @@ const getFontSize = ({ fsize }) => {
 export const Title = styled.h1`
 font-size:${getFontSize} ;
 color: white;
+margin:0 auto;
+text-align: center;
 `

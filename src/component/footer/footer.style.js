@@ -6,9 +6,9 @@ background-color: #222;
 color:grey;
 grid-template-columns: 1fr 1fr 1fr 1fr;
 grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-padding: 50px;
-text-align:center;
-row-gap: 10px;
+padding: 70px 45px;
+row-gap: 12px;
+font-size:13px;
 `
 export const AnchorStyle = styled.a`
 text-decoration: none;
