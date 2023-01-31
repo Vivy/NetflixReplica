@@ -1,5 +1,6 @@
 import BckImage from './component/bckimage/bckimage';
 import Card from './component/card/card';
+import Footer from './component/footer/footer';
 import Header from './component/header/header';
 import HeroList from './component/herolist/herolist';
 import QuestionList from './component/questionlist/questionlist';
@@ -14,6 +15,7 @@ function App() {
       </BckImage>
       <HeroList />
       <QuestionList />
+      <Footer />
     </div>
   );
 }
