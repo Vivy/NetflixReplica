@@ -1,25 +1,38 @@
+import Flex from '../flex/flex';
 import Hero from '../hero/hero';
+
+const theHeroList = [
+  {
+    title: 'lorem10',
+    direction: '',
+    content: 'laksndakosndaklsnfalksnflasknflaksnfaslnf',
+  },
+  {
+    title: 'lorem10',
+    direction: 'row-reverse',
+    content: 'laksndakosndaklsnfalksnflasknflaksnfaslnf',
+  },
+  {
+    title: 'lorem10',
+    direction: '',
+    content: 'laksndakosndaklsnfalksnflasknflaksnfaslnf',
+  },
+  {
+    title: 'lorem10',
+    direction: 'row-reverse',
+    content: 'laksndakosndaklsnfalksnflasknflaksnfaslnf',
+  },
+];
 
 const HeroList = () => {
   return (
-    <>
-      <Hero title='lorem10  '>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt,
-        voluptates.
-      </Hero>
-      <Hero title='kasjhfosafoas' direction='row-reverse'>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, quas
-        sequi?
-      </Hero>
-      <Hero title='kasjhfosafoas'>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, quas
-        sequi?
-      </Hero>
-      <Hero title='kasjhfosafoas' direction='row-reverse'>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, quas
-        sequi?
-      </Hero>
-    </>
+    <div>
+      {theHeroList.map((hero, key) => (
+        <Hero title={hero.title} direction={hero.direction} key={key}>
+          {hero.content}
+        </Hero>
+      ))}
+    </div>
   );
 };
 
