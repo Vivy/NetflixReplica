@@ -1,7 +1,11 @@
 import * as S from './label.style';
 
-const Label = ({ htmlFor }) => {
-  return <S.Label htmlFor={htmlFor}></S.Label>;
+const Label = ({ htmlFor, children, color }) => {
+  return (
+    <S.Label htmlFor={htmlFor} color={color}>
+      {children}
+    </S.Label>
+  );
 };
 
 export default Label;

@@ -3,10 +3,22 @@ import Input from '../../input/input';
 import Label from '../../label/label';
 import * as S from './smartinput.style';
 
-const SmartInput = ({ type = 'text', id, placeholder, height, width }) => {
+const SmartInput = ({
+  type = 'text',
+  id,
+  bgcolor,
+  border,
+  placeholder,
+  height,
+  width,
+  textLabel,
+  color,
+}) => {
   return (
     <Flex>
       <Input
+        bgcolor={bgcolor}
+        border={border}
         type={type}
         id={id}
         placeholder={placeholder}
@@ -14,7 +26,9 @@ const SmartInput = ({ type = 'text', id, placeholder, height, width }) => {
         width={width}
       />
 
-      <Label htmlFor={id}></Label>
+      <Label htmlFor={id} color={color}>
+        {textLabel}
+      </Label>
     </Flex>
   );
 };

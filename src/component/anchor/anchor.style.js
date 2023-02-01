@@ -1,5 +1,13 @@
 import styled from 'styled-components';
 
-export const Anchor = styled.a`
+const colorMap = {
+  grey: '#737373',
+  wg: '#b3b3b3'
+}
+const getColor = ({ color }) => (color ? `color: ${typeof color === 'string' ? `${color}` : `${colorMap[color]}`};` : ``)
 
+
+export const Anchor = styled.a`
+  text-decoration: none;
+  ${getColor}
 `

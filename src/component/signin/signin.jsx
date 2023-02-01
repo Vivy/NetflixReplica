@@ -25,25 +25,41 @@ const SignIn = () => {
             <SmartInput
               type='email'
               id='email'
-              placeholder='email'
+              placeholder='Email or phone number'
               height='50px'
               width='100%'
+              bgcolor='#222'
+              border='none'
             />
             <SmartInput
+              bgcolor='#222'
+              border='none'
               height='50px'
               width='100%'
               type='password'
               id='password'
-              placeholder='Add password'
+              placeholder='Password'
             />
             <Button fontSize='l'>Sign In</Button>
 
-            <SmartInput type='checkbox' id='checkbox' />
+            <SmartInput
+              type='checkbox'
+              id='checkbox'
+              textLabel='Remember me'
+              color={1}
+            />
 
-            <Anchor href='help'>Need Help?</Anchor>
-            <Text>New to Netflix?</Text>
-            <Anchor href='register'>Sing up now</Anchor>
-            <Text>
+            <Anchor href='help' color={1}>
+              Need Help?
+            </Anchor>
+
+            <Text color={1}>
+              New to Netflix?
+              <Anchor href='register' color='white'>
+                Sing up now
+              </Anchor>
+            </Text>
+            <Text color={1}>
               This page is protected by google reCAPTCHA to ensure bla bla.
               <Anchor href='info'>Learn more</Anchor>
             </Text>

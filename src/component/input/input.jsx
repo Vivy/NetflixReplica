@@ -1,6 +1,15 @@
 import * as S from './input.style';
 
-const Input = ({ type, id, placeholder, children, height, width }) => {
+const Input = ({
+  type,
+  bgcolor,
+  border,
+  id,
+  placeholder,
+  children,
+  height,
+  width,
+}) => {
   return (
     <S.Input
       type={type}
@@ -8,6 +17,8 @@ const Input = ({ type, id, placeholder, children, height, width }) => {
       placeholder={placeholder}
       $width={width}
       $height={height}
+      $border={border}
+      $bgcolor={bgcolor}
     >
       {children}
     </S.Input>

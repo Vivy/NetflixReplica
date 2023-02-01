@@ -6,4 +6,6 @@ ${({ id }) => (id ? `id: ${id};` : '')}
 ${({ placeholder }) => (placeholder ? `placeholder: ${placeholder};` : '')}
 ${({ $height }) => ($height ? `height: ${$height};` : '')}
 ${({ $width }) => ($width ? `width: ${$width};` : '')}
+${({ $border }) => ($border ? `border: ${$border};` : '')}
+${({ $bgcolor }) => ($bgcolor ? `background-color: ${$bgcolor};` : '')}
 `
