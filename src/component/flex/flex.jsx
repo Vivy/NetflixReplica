@@ -14,9 +14,11 @@ const Flex = ({
   padding,
   grow,
   dataTestId,
+  width,
 }) => {
   return (
     <S.Flex
+      $width={width}
       data-testid={dataTestId}
       $gradient={gradient}
       $grow={grow}

@@ -14,20 +14,30 @@ const SignIn = () => {
         <Header page='signin' />
         <Flex flex='flex' grow={1} align='center'>
           <Flex
-            padding='big'
+            padding={90}
             gradient
+            width='500'
             direction='column'
             flex='flex'
             gap='20px'
           >
             <Text as='h1'>Sign in</Text>
-            <SmartInput type='email' id='email' placeholder='email' />
             <SmartInput
+              type='email'
+              id='email'
+              placeholder='email'
+              height='50px'
+              width='100%'
+            />
+            <SmartInput
+              height='50px'
+              width='100%'
               type='password'
               id='password'
               placeholder='Add password'
             />
             <Button fontSize='l'>Sign In</Button>
+
             <SmartInput type='checkbox' id='checkbox' />
 
             <Anchor href='help'>Need Help?</Anchor>

@@ -3,16 +3,18 @@ import styled from 'styled-components';
 
 const getGradient = (({ $gradient }) => ($gradient ? `background-image: linear-gradient(
   0deg,
-  rgba(0,0,0,.8) 0,
-  transparent 60%,
-  rgba(0,0,0,.8)
+  rgba(0,0,0,0.8) 0%,
+  rgba(0,0,0,0.8)
 );` : ''))
 const paddingMap = {
   big: '50px',
   med: '20px',
   small: '10px',
 }
-const getPadding = ({ $padding }) => ($padding ? `padding: ${paddingMap[$padding]};` : '')
+const getPadding = ({ $padding }) => ($padding ? `padding: ${typeof $padding === 'number' ? `${$padding / 16}rem` : paddingMap[$padding]};` : '')
+
+const getWidth = ({ $width }) => ($width ? `width: ${$width}px` : '')
+
 
 export const Flex = styled.div`
   ${({ $justify }) => ($justify ? `justify-content:${$justify};` : '')}
@@ -25,4 +27,5 @@ export const Flex = styled.div`
   ${({ $grow }) => ($grow ? `flex-grow: ${$grow};` : '')}
   ${getPadding}
   ${getGradient}
+  ${getWidth}
 `
