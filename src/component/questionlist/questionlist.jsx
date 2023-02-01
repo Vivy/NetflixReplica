@@ -35,7 +35,13 @@ const questionList = [
 ];
 const QuestionList = () => {
   return (
-    <Flex direction='column' align='center' gap='20px' color='black'>
+    <Flex
+      flex='flex'
+      direction='column'
+      align='center'
+      gap='20px'
+      color='black'
+    >
       <Title>Frequently Asked Questions</Title>
       {questionList.map((q, k) => (
         <Question key={k} text={q.text}>

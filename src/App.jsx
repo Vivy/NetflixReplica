@@ -7,14 +7,12 @@ import DivGradient from './component/divgradient/divgradient';
 
 const App = () => {
   return (
-    <BckImage>
-      <DivGradient>
-        <Router>
-          <Home path='/' />
-          <SignIn path='signin' />
-        </Router>
-      </DivGradient>
-    </BckImage>
+    <DivGradient dataTestId='gradient-home' gradient>
+      <Router>
+        <Home path='/' />
+        <SignIn path='signin' />
+      </Router>
+    </DivGradient>
   );
 };
 

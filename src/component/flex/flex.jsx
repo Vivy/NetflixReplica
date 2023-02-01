@@ -9,6 +9,7 @@ const Flex = ({
   align,
   onClick,
   color,
+  flex,
 }) => {
   return (
     <S.Flex
@@ -18,6 +19,7 @@ const Flex = ({
       gap={gap}
       align={align}
       margin={margin}
+      flex={flex}
       color={color}
     >
       {children}

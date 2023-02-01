@@ -1,4 +1,3 @@
-import BckImage from '../bckimage/bckimage';
 import Card from '../card/card';
 import DivGradient from '../divgradient/divgradient';
 import Footer from '../footer/footer';
@@ -10,12 +9,10 @@ import * as S from './home.style';
 const Home = () => {
   return (
     <S.Home>
-      <BckImage>
-        <DivGradient>
-          <Header />
-          <Card />
-        </DivGradient>
-      </BckImage>
+      <DivGradient dataTestId='homeee' flex='flex'>
+        <Header />
+        <Card />
+      </DivGradient>
       <HeroList />
       <QuestionList />
       <Footer />

@@ -8,6 +8,7 @@ const Question = ({ children, text }) => {
   return (
     <S.Question>
       <Flex
+        flex='flex'
         onClick={() => setDetails(!details)}
         justify='space-between'
         margin='0 20px'

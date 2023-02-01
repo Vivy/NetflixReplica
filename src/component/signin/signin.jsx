@@ -1,4 +1,5 @@
 import BckImage from '../bckimage/bckimage';
+import Flex from '../flex/flex';
 import Header from '../header/header';
 import { DivGradient } from '../home/home.style';
 import * as S from './signin.style';
@@ -6,9 +7,9 @@ import * as S from './signin.style';
 const SignIn = () => {
   return (
     <S.SignIn>
-      <BckImage>
-        <DivGradient>
-          <Header page='signin' />
+      <DivGradient>
+        <Header page='signin' />
+        <Flex>
           <div>
             <input type='email' id='email' placeholder='email' />
             Email<label htmlFor='email'></label>
@@ -21,8 +22,8 @@ const SignIn = () => {
             <input type='checkbox' id='checkbox' />
             <label htmlFor='checkbox'>Remember me</label>
           </div>
-        </DivGradient>
-      </BckImage>
+        </Flex>
+      </DivGradient>
     </S.SignIn>
   );
 };

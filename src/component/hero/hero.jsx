@@ -6,7 +6,13 @@ import Tv from '../tv/tv';
 const Hero = ({ direction, children, title }) => {
   return (
     <S.Hero direction={direction}>
-      <Flex direction='column' gap='20px' justify='center' margin='0 60px'>
+      <Flex
+        flex='flex'
+        direction='column'
+        gap='20px'
+        justify='center'
+        margin='0 60px'
+      >
         <Title fsize='xl'>{title}</Title>
 
         <Title fsize='large'>{children}</Title>

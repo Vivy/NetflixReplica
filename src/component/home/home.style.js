@@ -6,8 +6,8 @@ export const Home = styled.div`
 
 export const DivGradient = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   height:100vh;
   flex-direction: column;
   background: rgba(0,0,0,.4);
