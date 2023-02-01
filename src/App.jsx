@@ -1,32 +1,21 @@
-import BckImage from './component/bckimage/bckimage';
-import Card from './component/card/card';
-import Footer from './component/footer/footer';
-import Header from './component/header/header';
-import HeroList from './component/herolist/herolist';
-import QuestionList from './component/questionlist/questionlist';
 import './index.css';
-import * as S from './App.style';
 import SignIn from './component/signin/signin';
+import Home from './component/home/home';
+import { Router } from '@reach/router';
+import BckImage from './component/bckimage/bckimage';
+import DivGradient from './component/divgradient/divgradient';
 
-function App() {
+const App = () => {
   return (
-    <div className='App'>
-      {/* <Menu></Menu> */}
-      {/* <Router> */}
-      <BckImage>
-        <S.DivGradient>
-          <Header />
-          <Card />
-        </S.DivGradient>
-      </BckImage>
-      <HeroList />
-      <QuestionList />
-      <Footer />
-      {/* <Home /> */}
-      {/* <SignIn /> */}
-      {/* </Router> */}
-    </div>
+    <BckImage>
+      <DivGradient>
+        <Router>
+          <Home path='/' />
+          <SignIn path='signin' />
+        </Router>
+      </DivGradient>
+    </BckImage>
   );
-}
+};
 
 export default App;
