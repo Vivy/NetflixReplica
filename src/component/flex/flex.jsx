@@ -18,17 +18,17 @@ const Flex = ({
   return (
     <S.Flex
       data-testid={dataTestId}
-      gradient={gradient}
-      grow={grow}
+      $gradient={gradient}
+      $grow={grow}
       onClick={onClick}
       $justify={justify}
-      direction={direction}
-      gap={gap}
-      align={align}
-      margin={margin}
-      flex={flex}
-      padding={padding}
-      color={color}
+      $direction={direction}
+      $gap={gap}
+      $align={align}
+      $margin={margin}
+      $flex={flex}
+      $padding={padding}
+      $color={color}
     >
       {children}
     </S.Flex>
