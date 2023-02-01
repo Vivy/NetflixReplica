@@ -1,27 +1,43 @@
-import BckImage from '../bckimage/bckimage';
+import Anchor from '../anchor/anchor';
+import Button from '../button/button';
+import DivGradient from '../divgradient/divgradient';
 import Flex from '../flex/flex';
 import Header from '../header/header';
-import { DivGradient } from '../home/home.style';
+import Text from '../text/text';
 import * as S from './signin.style';
+import SmartInput from './smartinput/smartinput';
 
 const SignIn = () => {
   return (
     <S.SignIn>
-      <DivGradient>
+      <DivGradient gradient dataTestId='signin' flex='flex' align='center'>
         <Header page='signin' />
-        <Flex>
-          <div>
-            <input type='email' id='email' placeholder='email' />
-            Email<label htmlFor='email'></label>
-          </div>
-          <div>
-            <input type='password' id='password' placeholder='password' />
-            Password<label htmlFor='password'></label>
-          </div>
-          <div>
-            <input type='checkbox' id='checkbox' />
-            <label htmlFor='checkbox'>Remember me</label>
-          </div>
+        <Flex flex='flex' grow={1} align='center'>
+          <Flex
+            padding='big'
+            gradient
+            direction='column'
+            flex='flex'
+            gap='20px'
+          >
+            <Text as='h1'>Sign in</Text>
+            <SmartInput type='email' id='email' placeholder='email' />
+            <SmartInput
+              type='password'
+              id='password'
+              placeholder='Add password'
+            />
+            <Button fontSize='l'>Sign In</Button>
+            <SmartInput type='checkbox' id='checkbox' />
+
+            <Anchor href='help'>Need Help?</Anchor>
+            <Text>New to Netflix?</Text>
+            <Anchor href='register'>Sing up now</Anchor>
+            <Text>
+              This page is protected by google reCAPTCHA to ensure bla bla.
+              <Anchor href='info'>Learn more</Anchor>
+            </Text>
+          </Flex>
         </Flex>
       </DivGradient>
     </S.SignIn>

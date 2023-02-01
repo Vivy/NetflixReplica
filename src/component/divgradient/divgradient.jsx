@@ -5,9 +5,17 @@ const DivGradient = ({
   flex,
   gradient,
   dataTestId = 'change me',
+  justify,
+  align,
 }) => {
   return (
-    <S.DivGradient flex={flex} gradient={gradient} data-testid={dataTestId}>
+    <S.DivGradient
+      justify={justify}
+      align={align}
+      flex={flex}
+      gradient={gradient}
+      data-testid={dataTestId}
+    >
       {children}
     </S.DivGradient>
   );

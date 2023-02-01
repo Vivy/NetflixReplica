@@ -25,4 +25,6 @@ export const DivGradient = styled.div`
   background-image: linear-gradient(0deg,rgba(0,0,0,.8) 0,transparent 60%,rgba(0,0,0,.8)); */
   ${({ flex }) => (flex ? `display: ${flex};` : '')}
   ${getGradient}
+  ${({ justify }) => (justify ? `justify-content: ${justify};` : '')}
+  ${({ align }) => (align ? `align-items: ${align};` : '')}
 `;

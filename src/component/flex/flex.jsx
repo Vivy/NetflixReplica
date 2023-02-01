@@ -10,16 +10,24 @@ const Flex = ({
   onClick,
   color,
   flex,
+  gradient,
+  padding,
+  grow,
+  dataTestId,
 }) => {
   return (
     <S.Flex
+      data-testid={dataTestId}
+      gradient={gradient}
+      grow={grow}
       onClick={onClick}
-      justify={justify}
+      $justify={justify}
       direction={direction}
       gap={gap}
       align={align}
       margin={margin}
       flex={flex}
+      padding={padding}
       color={color}
     >
       {children}
