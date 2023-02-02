@@ -17,7 +17,7 @@ const Header = ({ page = 'home' }) => {
       {page === 'home' && (
         <S.Wrapper>
           <Select />
-          <Button href='/signin' padding='s'>
+          <Button href='/signin' padding='7px 17px;'>
             Sign In
           </Button>
         </S.Wrapper>

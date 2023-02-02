@@ -12,7 +12,7 @@ const Submit = () => {
       <label htmlFor='email' style={{ display: 'none' }}>
         Email Address
       </label>
-      <Button height='60px' padding='m' fontSize='m'>
+      <Button height='60px' padding='16px 12px;' fontSize='35px'>
         Get Started
       </Button>
     </S.Submit>

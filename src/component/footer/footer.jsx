@@ -42,15 +42,15 @@ const Footer = ({ gradient, page = 'home' }) => {
             <S.AnchorStyle href='tel:0800-672-120'> 0800-672-120</S.AnchorStyle>
           </h3>
           <S.AnchorStyle href='Faq'>Faq</S.AnchorStyle>
+          <S.AnchorStyle href='Help Center'>Help Center</S.AnchorStyle>
+          <S.AnchorStyle href='Terms of use'>Terms of use</S.AnchorStyle>
+          <S.AnchorStyle href='Privacy'>Privacy</S.AnchorStyle>
           <S.AnchorStyle href='cookie preferences'>
             cookie preferences
           </S.AnchorStyle>
           <S.AnchorStyle href='Corporate information'>
             Corporate information
           </S.AnchorStyle>
-          <S.AnchorStyle href='Help Center'>Help Center</S.AnchorStyle>
-          <S.AnchorStyle href='Terms of use'>Terms of use</S.AnchorStyle>
-          <S.AnchorStyle href='Privacy'>Privacy</S.AnchorStyle>
           <Select />
         </>
       )}

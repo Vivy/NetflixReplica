@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
 
-const getPadding = ({ padding = 'm' }) => (padding === 'm' ? `padding: 0 3.5rem;` : 'padding: 7px 17px;')
-const getFont = ({ fontSize = 's' }) => (fontSize === 's' ? 'font-size: 15px;' : 'font-size: 35px;')
+const getPadding = ({ padding }) => (padding ? `padding:${padding};` : '')
+const getFont = ({ fontSize }) => (fontSize ? `font-size: ${fontSize};` : '')
+const getFontWeight = ({ fontWeight }) => (fontWeight ? `font-weight: ${fontWeight};` : '')
+const getMargin = ({ $margin }) => ($margin ? `margin: ${$margin};` : '')
 export const Button = styled.a`
   display: flex;
   align-items: center;
@@ -16,7 +18,10 @@ export const Button = styled.a`
   border: none;
   text-decoration: none;
   cursor: pointer;
+  ${getMargin}
   ${({ width }) => (width ? `width: ${width};` : '')}
   ${({ height }) => (height ? `height: ${height};` : '')}
+  ${({ $justify }) => ($justify ? `justify-content: ${$justify};` : '')}
   ${getPadding}
+  ${getFontWeight}
 `

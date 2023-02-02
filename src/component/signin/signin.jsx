@@ -41,7 +41,15 @@ const SignIn = () => {
               id='password'
               placeholder='Password'
             />
-            <Button fontSize='l'>Sign In</Button>
+            <Button
+              fontSize='16px'
+              padding='21px'
+              fontWeight='500'
+              justify='center'
+              margin='24px 0 12px'
+            >
+              Sign In
+            </Button>
 
             <SmartInput
               type='checkbox'
