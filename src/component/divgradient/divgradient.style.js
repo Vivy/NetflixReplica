@@ -10,7 +10,7 @@ background-image: linear-gradient(
   transparent 60%,
   rgba(0,0,0,.8)
 ),
- url('back.jpg')
+ url('/image/back.jpg')
 ;
 
 `

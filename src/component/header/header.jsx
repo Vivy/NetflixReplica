@@ -7,10 +7,10 @@ const Header = ({ page = 'home' }) => {
     <S.Header>
       <S.ImgWrapper>
         {page === 'home' ? (
-          <S.Img src='netflix.png' />
+          <S.Img src='/image/netflix.png' />
         ) : (
           <a href='/'>
-            <S.Img src='netflix.png' />
+            <S.Img src='/image/netflix.png' />
           </a>
         )}
       </S.ImgWrapper>

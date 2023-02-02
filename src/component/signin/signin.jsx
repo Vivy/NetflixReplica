@@ -15,7 +15,7 @@ const SignIn = () => {
         <Header page='signin' />
         <Flex flex='flex' grow={1} align='center'>
           <Flex
-            padding={90}
+            padding='60px 68px 40px'
             gradient
             width='500'
             direction='column'
@@ -51,16 +51,17 @@ const SignIn = () => {
               Sign In
             </Button>
 
-            <SmartInput
-              type='checkbox'
-              id='checkbox'
-              textLabel='Remember me'
-              color={1}
-            />
-
-            <Anchor href='help' color={1}>
-              Need Help?
-            </Anchor>
+            <Flex direction='row' flex='flex' justify='space-between'>
+              <SmartInput
+                type='checkbox'
+                id='checkbox'
+                textLabel='Remember me'
+                color={1}
+              />
+              <Anchor href='help' color={1}>
+                Need Help?
+              </Anchor>
+            </Flex>
 
             <Text color={1}>
               New to Netflix?

@@ -3,33 +3,40 @@ import Hero from '../hero/hero';
 
 const theHeroList = [
   {
-    title: 'lorem10',
+    src: '/image/tv.png',
+    title: 'Enjoy on your TV.',
     direction: '',
-    content: 'laksndakosndaklsnfalksnflasknflaksnfaslnf',
+    content:
+      'Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.',
   },
   {
-    title: 'lorem10',
+    src: '/image/mobile.jpg',
+    title: 'Download your shows to watch offline.',
     direction: 'row-reverse',
-    content: 'laksndakosndaklsnfalksnflasknflaksnfaslnf',
+    content: 'Save your favorites easily and always have something to watch.',
   },
   {
-    title: 'lorem10',
+    src: '/image/device-pile.png',
+    title: 'Watch everywhere.',
     direction: '',
-    content: 'laksndakosndaklsnfalksnflasknflaksnfaslnf',
+    content:
+      'Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.',
   },
   {
-    title: 'lorem10',
+    src: '/image/kids.png',
+    title: 'Create profiles for kids.',
     direction: 'row-reverse',
-    content: 'laksndakosndaklsnfalksnflasknflaksnfaslnf',
+    content:
+      'Send kids on adventures with their favorite characters in a space made just for them—free with your membership.',
   },
 ];
 
 const HeroList = () => {
   return (
     <div>
-      {theHeroList.map((hero, key) => (
-        <Hero title={hero.title} direction={hero.direction} key={key}>
-          {hero.content}
+      {theHeroList.map(({ title, direction, src, content }, key) => (
+        <Hero title={title} direction={direction} key={key} src={src}>
+          {content}
         </Hero>
       ))}
     </div>

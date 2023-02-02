@@ -7,13 +7,7 @@ const getGradient = (({ $gradient }) => ($gradient ? `background-image: linear-g
   rgba(0,0,0,0.8)
 );` : ''))
 
-const paddingMap = {
-  big: '50px',
-  med: '20px',
-  small: '10px',
-}
-
-const getPadding = ({ $padding }) => ($padding ? `padding: ${typeof $padding === 'number' ? `${$padding / 16}rem` : paddingMap[$padding]};` : '')
+const getPadding = ({ $padding }) => ($padding ? `padding: ${$padding};` : '')
 
 const getWidth = ({ $width }) => ($width ? `width: ${$width}px` : '')
 
