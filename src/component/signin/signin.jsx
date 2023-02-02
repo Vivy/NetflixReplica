@@ -68,7 +68,7 @@ const SignIn = () => {
         </Flex>
       </DivGradient>
       <Flex gradient>
-        <Footer gradient />
+        <Footer gradient page='signin' />
       </Flex>
     </S.SignIn>
   );

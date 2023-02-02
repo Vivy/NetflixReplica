@@ -37,8 +37,6 @@ const Footer = ({ gradient, page = 'home' }) => {
         </>
       ) : (
         <>
-          {' '}
-          ({' '}
           <h3 style={{ gridRow: '1/1', gridColumn: '1/5' }}>
             Questions? Call
             <S.AnchorStyle href='tel:0800-672-120'> 0800-672-120</S.AnchorStyle>
@@ -53,7 +51,7 @@ const Footer = ({ gradient, page = 'home' }) => {
           <S.AnchorStyle href='Help Center'>Help Center</S.AnchorStyle>
           <S.AnchorStyle href='Terms of use'>Terms of use</S.AnchorStyle>
           <S.AnchorStyle href='Privacy'>Privacy</S.AnchorStyle>
-          <Select />)
+          <Select />
         </>
       )}
     </S.Footer>

@@ -15,7 +15,7 @@ const Home = () => {
       </DivGradient>
       <HeroList />
       <QuestionList />
-      <Footer />
+      <Footer gradient />
     </S.Home>
   );
 };
