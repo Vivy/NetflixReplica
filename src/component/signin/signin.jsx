@@ -2,6 +2,7 @@ import Anchor from '../anchor/anchor';
 import Button from '../button/button';
 import DivGradient from '../divgradient/divgradient';
 import Flex from '../flex/flex';
+import Footer from '../footer/footer';
 import Header from '../header/header';
 import Text from '../text/text';
 import * as S from './signin.style';
@@ -66,6 +67,9 @@ const SignIn = () => {
           </Flex>
         </Flex>
       </DivGradient>
+      <Flex gradient>
+        <Footer gradient />
+      </Flex>
     </S.SignIn>
   );
 };
