@@ -26,7 +26,21 @@ const Question = ({ children, text }) => {
           />
         )}
       </Flex>
-      {details ? <p style={{ color: 'white' }}>{text}</p> : ''}
+      {details ? (
+        <S.Answer>
+          <div>
+            <span>{text.texta}</span>
+            <br />
+            <br />
+            <span>{text.textb}</span>
+          </div>
+          {/* {text} */}
+        </S.Answer>
+      ) : (
+        ''
+      )}
+      {console.log(text, 'asta este text')}
+      {console.log(text.texta, 'asta este texta')}
     </S.Question>
   );
 };
