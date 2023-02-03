@@ -19,4 +19,14 @@ export const IconSomething = styled.div`
       font-family: bootstrap-icons !important;
       font-size: 13px;
     }
+    &::after {
+      content: '\uF27E';
+      color: white;
+      position: absolute;
+      top: 13px;
+      width: 100%;
+      right: -106px;
+      font-family: bootstrap-icons !important;
+      font-size: 13px;
+    }
 ` 

@@ -1,4 +1,3 @@
-import Flex from '../flex/flex';
 import Hero from '../hero/hero';
 
 const theHeroList = [
@@ -20,7 +19,7 @@ const theHeroList = [
     src: '/image/device-pile.png',
     title: 'Watch everywhere.',
     direction: '',
-    video: '/video/video1.mp4',
+    video: '/video/video2.mp4',
     content:
       'Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.',
   },
