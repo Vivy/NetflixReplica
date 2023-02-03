@@ -89,6 +89,7 @@ const QuestionList = () => {
       align='center'
       gap='20px'
       color='black'
+      padding='24px 0'
     >
       <Title>Frequently Asked Questions</Title>
       {questionList.map(({ text, question }, k) => (

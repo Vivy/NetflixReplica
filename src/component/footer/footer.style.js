@@ -13,6 +13,7 @@ grid-template-columns: 1fr 1fr 1fr 1fr;
 padding: 70px 45px;
 row-gap: 12px;
 font-size:13px;
+/* background-color: black; */
 ${getGradient}
 `
 export const AnchorStyle = styled.a`

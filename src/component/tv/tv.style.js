@@ -5,7 +5,7 @@ import styled from 'styled-components';
 export const Tv = styled.img`
   height: 200px;
   width: 500px;
-  margin: 30px 60px;
+  /* margin: 30px 60px; */
   width:100%;
   height:100%;
   aspect-ratio: 16/9;
@@ -20,11 +20,11 @@ export const TvWrapper = styled.div`
 `
 export const VideoWrapper = styled.div`
   height: 100%;
-  left: 60%;
-  max-height: 46%;
+  left: 50%;
+  max-height: 54%;
   max-width: 55%;
   position: absolute;
-  top: 48%;
+  top: 47%;
   transform: translate(-50%,-50%);
   width: 100%;
 `

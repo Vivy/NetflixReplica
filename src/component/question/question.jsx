@@ -28,7 +28,7 @@ const Question = ({ children, text }) => {
       </Flex>
       {details ? (
         <S.Answer>
-          {text.map(({ texta, textb, k }) => {
+          {text.map(({ texta, textb }, k) => {
             <div key={k}>
               <span>{texta}</span>
               <br />
@@ -36,7 +36,8 @@ const Question = ({ children, text }) => {
               <span>{textb}</span>
             </div>;
             {
-              console.log(texta, 'asta este texta');
+              console.log(texta, 'asta este textAAAAA');
+              console.log(textb, 'asta este textBBBB');
             }
           })}
           {/* {text} */}
