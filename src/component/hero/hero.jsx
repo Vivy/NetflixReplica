@@ -3,7 +3,7 @@ import * as S from './hero.style';
 import Title from '../title/title';
 import Tv from '../tv/tv';
 
-const Hero = ({ direction, children, title, src }) => {
+const Hero = ({ direction, children, title, src, video }) => {
   return (
     <S.Hero direction={direction}>
       <Flex
@@ -17,7 +17,7 @@ const Hero = ({ direction, children, title, src }) => {
 
         <Title fsize='large'>{children}</Title>
       </Flex>
-      <Tv src={src} />
+      <Tv src={src} video={video} />
     </S.Hero>
   );
 };

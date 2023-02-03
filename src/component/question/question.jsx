@@ -28,19 +28,23 @@ const Question = ({ children, text }) => {
       </Flex>
       {details ? (
         <S.Answer>
-          <div>
-            <span>{text.texta}</span>
-            <br />
-            <br />
-            <span>{text.textb}</span>
-          </div>
+          {text.map(({ texta, textb, k }) => {
+            <div key={k}>
+              <span>{texta}</span>
+              <br />
+              <br />
+              <span>{textb}</span>
+            </div>;
+            {
+              console.log(texta, 'asta este texta');
+            }
+          })}
           {/* {text} */}
         </S.Answer>
       ) : (
         ''
       )}
       {console.log(text, 'asta este text')}
-      {console.log(text.texta, 'asta este texta')}
     </S.Question>
   );
 };

@@ -4,6 +4,7 @@ import Hero from '../hero/hero';
 const theHeroList = [
   {
     src: '/image/tv.png',
+    video: '/video/video1.mp4',
     title: 'Enjoy on your TV.',
     direction: '',
     content:
@@ -19,6 +20,7 @@ const theHeroList = [
     src: '/image/device-pile.png',
     title: 'Watch everywhere.',
     direction: '',
+    video: '/video/video1.mp4',
     content:
       'Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.',
   },
@@ -34,8 +36,14 @@ const theHeroList = [
 const HeroList = () => {
   return (
     <div>
-      {theHeroList.map(({ title, direction, src, content }, key) => (
-        <Hero title={title} direction={direction} key={key} src={src}>
+      {theHeroList.map(({ title, direction, src, content, video }, key) => (
+        <Hero
+          title={title}
+          direction={direction}
+          key={key}
+          video={video}
+          src={src}
+        >
           {content}
         </Hero>
       ))}
