@@ -7,3 +7,6 @@ export const Question = styled.div`
   height:100%;
   flex-direction: column ;
 `
+export const Answer = styled.div`
+  min-width: 50%;
+` 
