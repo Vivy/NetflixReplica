@@ -4,11 +4,16 @@ export const Select = styled.select`
   background-color: black;
   color: white;
   text-align: center;
-  padding: 10px 10px 10px 38px;
+  padding: 10px 20px 10px 38px;
   border-radius: 5px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+
 `
 export const IconSomething = styled.div`
     position: relative;
+    width: fit-content;
+    ${grid}
 
     &::before {
       content: '\f3ee';
@@ -24,8 +29,7 @@ export const IconSomething = styled.div`
       color: white;
       position: absolute;
       top: 13px;
-      width: 100%;
-      right: -106px;
+      right: 6px;
       font-family: bootstrap-icons !important;
       font-size: 13px;
     }

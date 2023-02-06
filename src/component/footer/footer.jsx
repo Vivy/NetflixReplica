@@ -51,7 +51,7 @@ const Footer = ({ gradient, page = 'home' }) => {
           <S.AnchorStyle href='Corporate information'>
             Corporate information
           </S.AnchorStyle>
-          <Select />
+          <Select style={{ gridRow: '4' }} />
         </>
       )}
     </S.Footer>
