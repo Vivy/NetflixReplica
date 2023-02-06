@@ -9,9 +9,13 @@ const Input = ({
   children,
   height,
   width,
+  // ref,
+  name,
 }) => {
   return (
     <S.Input
+      // ref={ref}
+      name={name}
       type={type}
       id={id}
       placeholder={placeholder}

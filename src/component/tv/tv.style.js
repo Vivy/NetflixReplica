@@ -33,5 +33,5 @@ export const Video = styled.video`
   width: 100%;
 `
 export const Source = styled.source`
-  ${({ video }) => (video ? `src: ${video};` : '')}
+  
 `

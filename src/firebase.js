@@ -1,6 +1,8 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import { createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword } from 'firebase/auth'
+import { collection, doc, getDoc, getFirestore } from 'firebase/firestore'
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -18,4 +20,35 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+export const analytics = getAnalytics(app);
+export const auth = getAuth(app)
+export const db = getFirestore(app)
+
+export const readOne = async (table = '', docId = '') => {
+  try {
+    const result = await getDoc(doc(collection(db, table), docId))
+    console.log(result.id, 'this is result')
+    console.log(result.data(), 'this is result data ')
+
+  } catch (error) {
+    console.log(error.message, 'something went wrong')
+  }
+}
+
+export const write = () => { }
+
+export const signIn = async (email = '', password = '') => {
+  try {
+    const result = await signInWithEmailAndPassword(auth, email, password)
+  } catch (error) {
+    console.log(error.message, "things did not work")
+  }
+}
+export const signUp = async (email = '', password = '') => {
+  try {
+    const result = await createUserWithEmailAndPassword(auth, email, password)
+  } catch (error) {
+    console.log(error.message, "things did not work")
+  }
+}
+

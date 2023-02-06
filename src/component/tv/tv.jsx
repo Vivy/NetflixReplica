@@ -6,7 +6,7 @@ const Tv = ({ src, video }) => {
       <S.Tv src={src} alt='change me' />
       <S.VideoWrapper>
         <S.Video autoPlay loop muted playsInline>
-          <S.Source video={video} type='video/mp4' />
+          <S.Source src={video} type='video/mp4' />
         </S.Video>
       </S.VideoWrapper>
     </S.TvWrapper>

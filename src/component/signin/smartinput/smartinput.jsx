@@ -13,10 +13,16 @@ const SmartInput = ({
   width,
   textLabel,
   color,
+  onChange,
+  name,
+  // ref,
 }) => {
   return (
     <Flex>
       <Input
+        // ref={ref}
+        name={name}
+        onChange={onChange}
         bgcolor={bgcolor}
         border={border}
         type={type}
