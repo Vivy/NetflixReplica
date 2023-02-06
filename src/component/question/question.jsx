@@ -12,6 +12,7 @@ const Question = ({ children, text }) => {
         onClick={() => setDetails(!details)}
         justify='space-between'
         margin='0 20px'
+        align='center'
       >
         <h1 style={{ color: 'white' }}>{children}</h1>
         {details ? (
@@ -30,17 +31,15 @@ const Question = ({ children, text }) => {
         <S.Answer>
           {text.map((text, k) => {
             return (
-              <div key={k}>
-                <span>{text}</span>
-              </div>
+              <S.AnswerText key={k}>
+                <p>{text}</p>
+              </S.AnswerText>
             );
           })}
-          {/* {text} */}
         </S.Answer>
       ) : (
         ''
       )}
-      {console.log(text, 'asta este text')}
     </S.Question>
   );
 };

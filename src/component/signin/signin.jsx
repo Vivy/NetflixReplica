@@ -15,19 +15,19 @@ const SignIn = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const firsttry = new FormData(e.target);
-    console.log(e, 'this is e');
-    console.log(firsttry.get('email'), 'this is firsttry email');
-    console.log(firsttry.get('password'), 'this is firsttry password');
-    signIn(firsttry.get('email'), firsttry.get('password'));
-    // signUp(firsttry.get('email'), firsttry.get('password'));
+    console.log(firsttry, 'what is this');
+
+    // signIn(firsttry.get('email'), firsttry.get('password'));
+    signUp(firsttry.get('email'), firsttry.get('password'));
   };
-  const onSubmit = (valueList) => {
-    console.log(valueList, 'this is valuKISTTTTT');
-  };
+
+  // const onSubmit = (valueList) => {
+  //   console.log(valueList, 'this is valuKISTTTTT');
+  // };
 
   return (
     <div>
-      <Formik
+      {/* <Formik
         initialValues={{
           email: '',
           password: '',
@@ -41,7 +41,7 @@ const SignIn = () => {
             <button type='submit'>click this new button</button>
           </Form>
         )}
-      </Formik>
+      </Formik> */}
       <S.SignIn onSubmit={handleSubmit}>
         <DivGradient gradient dataTestId='signin' flex='flex' align='center'>
           <Header page='signin' />
@@ -82,9 +82,10 @@ const SignIn = () => {
                 justify='center'
                 margin='24px 0 12px'
               >
-                Sign In
+                <Anchor href='signin' color='white'>
+                  Sign In
+                </Anchor>
               </Button>
-              <button type='submit'>test me</button>
 
               <Flex direction='row' flex='flex' justify='space-between'>
                 <SmartInput
@@ -100,7 +101,7 @@ const SignIn = () => {
 
               <Text color={1}>
                 New to Netflix?
-                <Anchor href='register' color='white'>
+                <Anchor href='/' color='white'>
                   Sing up now
                 </Anchor>
               </Text>

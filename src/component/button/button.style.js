@@ -5,7 +5,7 @@ const getPadding = ({ padding }) => (padding ? `padding:${padding};` : '')
 const getFont = ({ fontSize }) => (fontSize ? `font-size: ${fontSize};` : '')
 const getFontWeight = ({ fontWeight }) => (fontWeight ? `font-weight: ${fontWeight};` : '')
 const getMargin = ({ $margin }) => ($margin ? `margin: ${$margin};` : '')
-export const Button = styled.a`
+export const Button = styled.button`
   display: flex;
   align-items: center;
   background-color: #e50914;

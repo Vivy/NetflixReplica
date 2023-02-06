@@ -41,14 +41,16 @@ export const signIn = async (email = '', password = '') => {
   try {
     const result = await signInWithEmailAndPassword(auth, email, password)
   } catch (error) {
-    console.log(error.message, "things did not work")
+    console.log(error.message, "things did not work in SignIN")
   }
 }
+
 export const signUp = async (email = '', password = '') => {
   try {
     const result = await createUserWithEmailAndPassword(auth, email, password)
   } catch (error) {
-    console.log(error.message, "things did not work")
+    signIn(email, password)
+    console.log(error.message, "things did not work in SignUP")
   }
 }
 

@@ -9,5 +9,7 @@ const getColor = ({ color }) => (color ? `color: ${typeof color === 'string' ? `
 
 export const Anchor = styled.a`
   text-decoration: none;
+  /* cursor: pointer; */
   ${getColor}
+  ${({ zIndex }) => (zIndex ? `z-index: ${zIndex};` : '')}
 `

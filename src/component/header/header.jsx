@@ -1,3 +1,4 @@
+import { Anchor } from '../anchor/anchor.style';
 import Button from '../button/button';
 import Select from '../select/select';
 import * as S from './header.style';
@@ -17,8 +18,10 @@ const Header = ({ page = 'home' }) => {
       {page === 'home' && (
         <S.Wrapper>
           <Select />
-          <Button href='/signin' padding='7px 17px;'>
-            Sign In
+          <Button padding='7px 17px;'>
+            <Anchor color='white' href='signin' zIndex='1'>
+              Sign In
+            </Anchor>
           </Button>
         </S.Wrapper>
       )}
