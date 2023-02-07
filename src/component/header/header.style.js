@@ -16,6 +16,7 @@ export const Img = styled.img`
   aspect-ratio: 3.72/1;
   object-fit: cover;
   object-position: center;
+ 
 `
 
 export const Wrapper = styled.div`

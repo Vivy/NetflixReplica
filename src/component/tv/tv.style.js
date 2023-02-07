@@ -11,6 +11,8 @@ export const Tv = styled.img`
   aspect-ratio: 16/9;
   object-fit: contain;
   object-position: center;
+  position: relative;
+  z-index:1;
   `
 export const TvWrapper = styled.div`
   position: relative;

@@ -13,7 +13,6 @@ export const Select = styled.select`
 export const IconSomething = styled.div`
     position: relative;
     width: fit-content;
-    ${grid}
 
     &::before {
       content: '\f3ee';
